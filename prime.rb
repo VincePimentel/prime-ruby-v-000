@@ -8,8 +8,8 @@ def prime?(number)
   while n < number
     if number % n == 0
       n += 1
+      return false
     end
-    return false
   end
   return true
 end
