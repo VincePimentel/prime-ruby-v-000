@@ -1,12 +1,15 @@
 # Add  code here!
 def prime?(number)
   n = 2
-  if number < 2
+  if number <= 1
     return false
   end
-   while n < number
-    return false if number % n == 0
-    n += 1
+
+  while n < number
+    if number % n == 0
+      n += 1
+    end
+    return false
   end
-  true
+  return true
 end
