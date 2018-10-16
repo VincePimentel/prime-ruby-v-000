@@ -1,4 +1,12 @@
 # Add  code here!
 def prime?(number)
-  !((2..number-1).any? {|i| number % i == 0}) && number > 1
+  n = 2
+  if number <= 1
+    return false
+  end
+
+  while n < number
+    if number % n == 0
+      return false
+  end
 end
